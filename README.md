@@ -102,7 +102,6 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
    * [Delete account screen]
 
 
-# MeMyself-I
-
+## Wireframes
 
 <img src="https://i.imgur.com/JgxC9WG.gif" width=250>
