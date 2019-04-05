@@ -15,7 +15,6 @@ Group Project - README Template
 Turtly is an app where users can write out their thoughts and emotions anonymously and share it with the world without any concern for judgement. A place where users can “let it out” and help relieve their trapped mind. It is a space like a turtle’s shell where inside, you are safe from the harshness of outside world, thus the name Turtly. Users can create posts with texts, photos, and audio notes which can be publicized (public posts will be limited to text posts). While it is open to public, their profile information will be kept anonymous. Users can mark their posts, view previously created posts, as well as get feeds of other people’s public posts.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Health & Fitness / Lifestyle
 - **Mobile:** This app would be primarily developed for mobile. It will have a mobile friendly layout with access to camera, audio, and location.
 - **Story:** The app is unique in that it is not trying to be social. We want to be a place for relief from the avalanche of social-everything trend in apps, where you don’t have to be concerned about being politically correct, setting yourself up to social standards, or being judged; and just express your raw thoughts out loud.
