@@ -41,66 +41,66 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 
 ### 2. Screen Archetypes
 
-* [Login]
-   * [Users are prompted to sign in or sign up]
-* [Register]
-   * [Upon selection the sign up button, user will be directed to the register page]
-   * [Users are prompted to enter their email address and password]
-* [Notification Screen]
-   * [Upon logging in, dashboard is shown as the default page]
-   * [Dashboard displays a list of user’s notes along with add/edit/delete/post option]
-   * [Navigation tab is shown under the bottom]
-* [Feeds Screen]
-   * [Shows latest public posts uploaded by other users]
-* [Settings Screen]
-   * [Allows users to set pin-locks and notification settings]
+* Login
+   * Users are prompted to sign in or sign up
+* Register
+   * Upon selection the sign up button, user will be directed to the register page
+   * Users are prompted to enter their email address and password
+* Notification Screen
+   * Upon logging in, dashboard is shown as the default page
+   * Dashboard displays a list of user’s notes along with add/edit/delete/post option
+   * Navigation tab is shown under the bottom
+* Feeds Screen
+   * Shows latest public posts uploaded by other users
+* Settings Screen
+   * Allows users to set pin-locks and notification settings
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [Login]
-* [Dashboard]
-* [Feeds]
-* [Settings]
+* Login
+* Dashboard
+* Feeds
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [Sign up]
-   * [Register screen]
-* [Sign in]
-   * [Dashboard]
-* [Dashboard]
-   * [Add]
-   * [New note screen]
-* [Dashboard]
-   * [Edit]
-   * [Edit note screen]
-* [Dashboard]
-   * [Delete]
-   * [Confirm screen]
-* [Dashboard]
-   * [Post]
-   * [Public note screen]
-* [Feeds]
-   * [Posts from other users screen]
-* [Feeds]
-   * [Post]
-   * [Public note screen]
-* [Settings]
-   * [Settings screen]
-* [Settings]
-   * [Setup pins]
-   * [Pin set up screen]
-* [Settings]
-   * [Change password]
-   * [Change password screen]
-* [Settings]
-   * [Log out]
-   * [Login screen]
-* [Settings]
-   * [Delete account]
-   * [Delete account screen]
+* Sign up
+   * Register screen
+* Sign in
+   * Dashboard
+* Dashboard
+   * Add
+   * New note screen
+* Dashboard
+   * Edit
+   * Edit note screen
+* Dashboard
+   * Delete
+   * Confirm screen
+* Dashboard
+   * Post
+   * Public note screen
+* Feeds
+   * Posts from other users screen
+* Feeds
+   * Post
+   * Public note screen
+* Settings
+   * Settings screen
+* Settings
+   * Setup pins
+   * Pin set up screen
+* Settings
+   * Change password
+   * Change password screen
+* Settings
+   * Log out
+   * Login screen
+* Settings
+   * Delete account
+   * Delete account screen
 
 
 ## Wireframes
