@@ -1,32 +1,15 @@
 //
-//  LoginViewController.swift
+//  FeedViewController.swift
 //  MeMyself-I
 //
-//  Created by 何恺君 on 4/5/19.
+//  Created by Hao on 4/11/19.
 //  Copyright © 2019 Hao. All rights reserved.
 //
 
 import UIKit
-import Parse
 
+class FeedViewController: UIViewController {
 
-class LoginViewController: UIViewController {
-
-    @IBOutlet weak var Password: UILabel!
-    @IBOutlet weak var Username: UILabel!
-    
-    @IBOutlet weak var UsernameText: UITextField!
-    
-    @IBOutlet weak var PasswordText: UITextField!
-    
-    @IBAction func SignUpButton(_ sender: Any) {
-        
-    
-    }
-    
-    @IBAction func SignInButton(_ sender: Any) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(with: ParseClientConfiguration(block: { (configuration:
             ParseMutableClientConfiguration) -> Void in
-            configuration.applicationId = ""
-            configuration.server = ""
+            configuration.applicationId = "MeMysle-I"
+            configuration.server = "https://fathomless-brushlands-80654.herokuapp.com"
             
             })
         )
