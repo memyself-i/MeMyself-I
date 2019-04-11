@@ -182,12 +182,64 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
             }
          }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
       - (Create/POST) Create a new comment on a post
+        ```swift
+        let comment = PFObject(className: "Comments")
+      
+    comment["text"] = text
+      comment["post"] = selectedPost
+      comment["author"] = PFUser.current()!
+      
+      selectedPost.add(comment, forKey: "comments")
+      
+      selectedPost.saveInBackground {(success, error) in
+      if success {
+      print("Comment saved")
+      } else{
+      print("Error saving comment")
+      }
+      }
       - (Delete) Delete existing comment
+       ```swift
+      gameScore.remove(forKey: "comment")
+      ```
    - Create Post Screen
       - (Create/POST) Create a new post object
+       ```swift
+      let query = PFQuery(className:"Posts")
+      query.includeKeys(["author", "comments", "comments.user"])
+      query.limit = 20
+      
+      query.findObjectsInBackground{(posts,error) in
+      if posts != nil{
+      self.posts = posts!
+      self.tableView.reloadData()```
    - Profile Screen
       - (Read/GET) Query logged in user object
+      ```swift
+      let query = PFQuery(className:"User")
+      query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+      if let error = error {
+      // Log details of the failure
+      print(error.localizedDescription)
+      } else if let objects = objects {
+      // The find succeeded.
+      print("Successfully retrieved \(objects.count).")
+      // Do something with the found objects
+      for object in objects {
+      print(object.objectId as Any)
+      }
+      }
+      }
+
+      ```
       - (Update/PUT) Update user profile image
+      ```swift
+      let query = PFQuery(className:"User")
+      query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+      if let error = error {
+      print(error.localizedDescription)
+      } else if let User = User {
+      gameScore["profileImage"] = image
+      }
+      }```
