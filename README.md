@@ -29,10 +29,10 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 
 **Required Must-have Stories**
 
-* [Users can register and log in to access the user dashboard, feeds, and settings page]
-* [Users can get feeds of posts from other users]
-* [Users can mark their own special posts]
-* [Users can set pin-lock, notification, camera, audio settings]
+* Users can register and log in to access the user dashboard, feeds, and settings page
+* Users can get feeds of posts from other users
+* Users can mark their own special posts
+* Users can set pin-lock, notification, camera, audio settings
 
 **Optional Nice-to-have Stories**
 
@@ -41,68 +41,205 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 
 ### 2. Screen Archetypes
 
-* [Login]
-   * [Users are prompted to sign in or sign up]
-* [Register]
-   * [Upon selection the sign up button, user will be directed to the register page]
-   * [Users are prompted to enter their email address and password]
-* [Notification Screen]
-   * [Upon logging in, dashboard is shown as the default page]
-   * [Dashboard displays a list of user’s notes along with add/edit/delete/post option]
-   * [Navigation tab is shown under the bottom]
-* [Feeds Screen]
-   * [Shows latest public posts uploaded by other users]
-* [Settings Screen]
-   * [Allows users to set pin-locks and notification settings]
+* Login
+   * Users are prompted to sign in or sign up
+* Register
+   * Upon selection the sign up button, user will be directed to the register page
+   * Users are prompted to enter their email address and password
+* Notification Screen
+   * Upon logging in, dashboard is shown as the default page
+   * Dashboard displays a list of user’s notes along with add/edit/delete/post option
+   * Navigation tab is shown under the bottom
+* Feeds Screen
+   * Shows latest public posts uploaded by other users
+* Settings Screen
+   * Allows users to set pin-locks and notification settings
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [Login]
-* [Dashboard]
-* [Feeds]
-* [Settings]
+* Login
+* Dashboard
+* Feeds
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [Sign up]
-   * [Register screen]
-* [Sign in]
-   * [Dashboard]
-* [Dashboard]
-   * [Add]
-   * [New note screen]
-* [Dashboard]
-   * [Edit]
-   * [Edit note screen]
-* [Dashboard]
-   * [Delete]
-   * [Confirm screen]
-* [Dashboard]
-   * [Post]
-   * [Public note screen]
-* [Feeds]
-   * [Posts from other users screen]
-* [Feeds]
-   * [Post]
-   * [Public note screen]
-* [Settings]
-   * [Settings screen]
-* [Settings]
-   * [Setup pins]
-   * [Pin set up screen]
-* [Settings]
-   * [Change password]
-   * [Change password screen]
-* [Settings]
-   * [Log out]
-   * [Login screen]
-* [Settings]
-   * [Delete account]
-   * [Delete account screen]
+* Sign up
+   * Register screen
+* Sign in
+   * Dashboard
+* Dashboard
+   * Add
+   * New note screen
+* Dashboard
+   * Edit
+   * Edit note screen
+* Dashboard
+   * Delete
+   * Confirm screen
+* Dashboard
+   * Post
+   * Public note screen
+* Feeds
+   * Posts from other users screen
+* Feeds
+   * Post
+   * Public note screen
+* Settings
+   * Settings screen
+* Settings
+   * Setup pins
+   * Pin set up screen
+* Settings
+   * Change password
+   * Change password screen
+* Settings
+   * Log out
+   * Login screen
+* Settings
+   * Delete account
+   * Delete account screen
 
 
 ## Wireframes
 
 <img src="https://i.imgur.com/JgxC9WG.gif" width=250>
+
+
+## Schema 
+### Models
+#### Login View
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userid      | string   | enter user id |
+   | password        | string | enter password |
+   | sign in         | pointer to dashboard     | displays dashboard |
+   | sign up       | pointer to register  | displays registration page |
+   
+#### Register
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | email      | string   | enter email address |
+   | password        | string | enter password |
+   | confirm pw         | string     | confirm password |
+   | sign up       | pointer to confirm popup   | confirm sign up |
+ 
+#### Dashboard
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | post      | pointer to new post   | creates new post |
+   | edit        | pointer to post | update existing post |
+   | delete         | pointer to delete     | delete existing post |
+
+#### Feed
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | post      | pointer to new post   | create new post |
+   
+#### Setting
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | pin      | pointer to pin popup   | set up pin |
+   | change password        | pointer to password | update password |
+   | log out         | pointer to login view     | displays login view |
+   | delete       | pointer to confirm popup   | delete account |
+
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | string   | post id |
+   | title        | string | post title |
+   | createdAt         | date time     | date post created |
+   | updatedAt       | date time   | date post updated |
+   | comment | string   | add comments |
+   | camera    | file   | upload image |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | audio | file | insert audio |
+   
+ ### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Create/POST) Create a new comment on a post
+        ```swift
+        let comment = PFObject(className: "Comments")
+      
+        comment["text"] = text
+        comment["post"] = selectedPost
+        comment["author"] = PFUser.current()!
+      
+        selectedPost.add(comment, forKey: "comments")
+        
+        selectedPost.saveInBackground {(success, error) in
+        if success {
+        print("Comment saved")
+        } else{
+        print("Error saving comment")
+        }
+        }
+        - (Delete) Delete existing comment
+         ```swift
+        gameScore.remove(forKey: "comment")
+        ```
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+       ```swift
+      let query = PFQuery(className:"Posts")
+      query.includeKeys(["author", "comments", "comments.user"])
+      query.limit = 20
+      
+      query.findObjectsInBackground{(posts,error) in
+      if posts != nil{
+      self.posts = posts!
+      self.tableView.reloadData()```
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      ```swift
+      let query = PFQuery(className:"User")
+      query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+      if let error = error {
+      // Log details of the failure
+      print(error.localizedDescription)
+      } else if let objects = objects {
+      // The find succeeded.
+      print("Successfully retrieved \(objects.count).")
+      // Do something with the found objects
+      for object in objects {
+      print(object.objectId as Any)
+      }
+      }
+      }
+
+      ```
+      - (Update/PUT) Update user profile image
+      ```swift
+      let query = PFQuery(className:"User")
+      query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+      if let error = error {
+      print(error.localizedDescription)
+      } else if let User = User {
+      gameScore["profileImage"] = image
+      }
+      }```
