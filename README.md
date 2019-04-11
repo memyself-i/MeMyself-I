@@ -110,17 +110,57 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 
 ## Schema 
 ### Models
+#### Login View
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userid      | string   | enter user id |
+   | password        | string | enter password |
+   | sign in         | pointer to dashboard     | displays dashboard |
+   | sign up       | pointer to register  | displays registration page |
+   
+#### Register
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | email      | string   | enter email address |
+   | password        | string | enter password |
+   | confirm pw         | string     | confirm password |
+   | sign up       | pointer to confirm popup   | confirm sign up |
+ 
+#### Dashboard
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | post      | pointer to new post   | creates new post |
+   | edit        | pointer to post | update existing post |
+   | delete         | pointer to delete     | delete existing post |
+
+#### Feed
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | post      | pointer to new post   | create new post |
+   
+#### Setting
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | pin      | pointer to pin popup   | set up pin |
+   | change password        | pointer to password | update password |
+   | log out         | pointer to login view     | displays login view |
+   | delete       | pointer to confirm popup   | delete account |
+
 #### Post
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
+   | objectId      | string   | post id |
+   | title        | string | post title |
+   | createdAt         | date time     | date post created |
+   | updatedAt       | date time   | date post updated |
+   | comment | string   | add comments |
+   | camera    | file   | upload image |
    | createdAt     | DateTime | date when post is created (default field) |
    | updatedAt     | DateTime | date when post is last updated (default field) |
-   
-   
+   | audio | file | insert audio
