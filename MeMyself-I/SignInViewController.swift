@@ -1,14 +1,14 @@
 //
-//  FeedViewController.swift
+//  SignInViewController.swift
 //  MeMyself-I
 //
-//  Created by Hao on 4/11/19.
+//  Created by user148140 on 4/12/19.
 //  Copyright © 2019 Hao. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
