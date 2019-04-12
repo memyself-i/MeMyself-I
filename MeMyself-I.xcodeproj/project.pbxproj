@@ -12,7 +12,7 @@
 		8148F11F225ADF4F00E77D03 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8148F11E225ADF4F00E77D03 /* Feed.storyboard */; };
 		814D606C226141B500D61251 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606B226141B500D61251 /* SignUpViewController.swift */; };
 		814D606E2261489A00D61251 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606D2261489A00D61251 /* SignInViewController.swift */; };
-		9D5CADA22258080300AE4CB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CADA12258080300AE4CB7 /* LoginViewController.swift */; };
+		9D5CADA22258080300AE4CB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CADA12258080300AE4CB7 /* HomeViewController.swift */; };
 		A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */; };
 		A3E19EB0224EE15E008C3F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EAE224EE15E008C3F97 /* Main.storyboard */; };
 		A3E19EB2224EE160008C3F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EB1224EE160008C3F97 /* Assets.xcassets */; };
@@ -28,7 +28,7 @@
 		8148F11E225ADF4F00E77D03 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		814D606B226141B500D61251 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		814D606D2261489A00D61251 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		9D5CADA12258080300AE4CB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D5CADA12258080300AE4CB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A3E19EA7224EE15E008C3F97 /* MeMyself-I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeMyself-I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E19EAF224EE15E008C3F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			children = (
 				8148F119225ADEA300E77D03 /* Storyboards */,
 				A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */,
-				9D5CADA12258080300AE4CB7 /* LoginViewController.swift */,
+				9D5CADA12258080300AE4CB7 /* HomeViewController.swift */,
 				A3E19EB1224EE160008C3F97 /* Assets.xcassets */,
 				A3E19EB6224EE160008C3F97 /* Info.plist */,
 				814D606B226141B500D61251 /* SignUpViewController.swift */,
@@ -242,7 +242,7 @@
 			files = (
 				814D606E2261489A00D61251 /* SignInViewController.swift in Sources */,
 				814D606C226141B500D61251 /* SignUpViewController.swift in Sources */,
-				9D5CADA22258080300AE4CB7 /* LoginViewController.swift in Sources */,
+				9D5CADA22258080300AE4CB7 /* HomeViewController.swift in Sources */,
 				A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

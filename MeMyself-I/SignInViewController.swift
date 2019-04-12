@@ -7,9 +7,40 @@
 //
 
 import UIKit
+import Parse
 
 class SignInViewController: UIViewController {
 
+ 
+    @IBOutlet weak var Username: UILabel!
+    
+    @IBOutlet weak var Password: UILabel!
+    
+    @IBOutlet weak var UsernameText: UITextField!
+    
+    @IBOutlet weak var PasswordText: UITextField!
+    
+    
+    @IBAction func signin(_ sender: Any) {
+        
+        let Username = UsernameText.text!
+        let Password = PasswordText.text!
+        
+        PFUser.logInWithUsername(inBackground: Username, password: Password)
+        { (user, error) in
+            if user != nil{
+                self.performSegue(withIdentifier: "SignInSegue", sender: nil)
+            } else{
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

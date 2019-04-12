@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -25,6 +26,11 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func OnCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     @IBAction func onSignUp(_ sender: Any) {
         
         let user = PFUser()
@@ -35,26 +41,16 @@ class SignUpViewController: UIViewController {
         
         user.email = email.text
         
-        user.confirmPassword.text
+        user.password = confirmPassword.text
         
         user.signUpInBackground { (success, error) in
             if success {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.performSegue(withIdentifier: "SigninSegue", sender: nil)
             } else {
                 print("Error: \(error?.localizedDescription)")
             }
         }
-   
-    @IBAction func onSignUp(_ sender: Any) {
-        
-        
-    }
-    
 
-    @IBAction func onCancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        
-    }
     /*
     // MARK: - Navigation
 
@@ -65,4 +61,5 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
 }
