@@ -41,16 +41,23 @@ class SignUpViewController: UIViewController {
         
         user.email = email.text
         
-        user.password = confirmPassword.text
-        
+        if  user.password == confirmPassword.text{
         user.signUpInBackground { (success, error) in
             if success {
-                self.performSegue(withIdentifier: "SigninSegue", sender: nil)
+                self.performSegue(withIdentifier: "SignInSegue", sender: nil)
+                self.dismiss(animated: true, completion: nil)
             } else {
                 print("Error: \(error?.localizedDescription)")
             }
         }
-
+        }
+        else {
+            let title = "Error"
+            let message = "Password does not match"
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     /*
     // MARK: - Navigation
 
