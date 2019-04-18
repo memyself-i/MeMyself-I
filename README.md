@@ -30,6 +30,7 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 **Required Must-have Stories**
 
 - [x] Users see the home screen and have options to sign in or sign up
+<img src="https://i.imgur.com/FQzYAnO.gif">
 - [ ] Users can access the dashboard, feed, and settings page after the log in
 - [ ] Users can get feeds of posts from other users
 - [ ] Users can mark their own special posts
