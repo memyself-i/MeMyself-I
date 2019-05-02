@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let SignInNavigationController = main.instantiateViewController(withIdentifier: "SignInNavigationController")
+            
+            window?.rootViewController = SignInNavigationController
+        }
+        
         
         return true
     }

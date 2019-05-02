@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-RD-Lv4">
-                                <rect key="frame" x="211" y="492" width="103" height="36"/>
+                                <rect key="frame" x="244" y="492" width="70" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="dve-PN-IUN"/>
                                     <constraint firstAttribute="width" constant="103" id="eMr-YO-T22"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9x-NI-cdT">
-                                <rect key="frame" x="66" y="492" width="70" height="36"/>
+                                <rect key="frame" x="66" y="492" width="103" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Y1D-em-Vnh"/>
                                     <constraint firstAttribute="width" constant="103" id="tVZ-db-jTf"/>
@@ -224,7 +224,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hOe-tv-qKd">
             <objects>
-                <tabBarController id="lcQ-P8-hiz" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="SignInNavigationController" id="lcQ-P8-hiz" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WVA-2C-ZKn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -479,7 +479,7 @@
                         <viewLayoutGuide key="safeArea" id="QNB-2K-QpJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="lWe-ac-0Ml">
-                        <barButtonItem key="leftBarButtonItem" title="+" id="z0d-ej-gxQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="z0d-ej-gxQ"/>
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="yRk-rF-VNn"/>
                     </navigationItem>
                 </viewController>
