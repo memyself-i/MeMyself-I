@@ -1,14 +1,14 @@
 //
-//  Camera ViewController.swift
+//  PersonalViewController.swift
 //  MeMyself-I
 //
-//  Created by Hao on 4/24/19.
+//  Created by Hao on 5/2/19.
 //  Copyright © 2019 Hao. All rights reserved.
 //
 
 import UIKit
 
-class Camera_ViewController: UIViewController {
+class PersonalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

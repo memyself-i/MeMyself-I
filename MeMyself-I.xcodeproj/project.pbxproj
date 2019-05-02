@@ -13,8 +13,7 @@
 		814D606C226141B500D61251 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606B226141B500D61251 /* SignUpViewController.swift */; };
 		814D606E2261489A00D61251 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606D2261489A00D61251 /* SignInViewController.swift */; };
 		9D5CADA22258080300AE4CB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CADA12258080300AE4CB7 /* HomeViewController.swift */; };
-		A36F8D962271124600A54565 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36F8D952271124600A54565 /* FeedViewController.swift */; };
-		A36F8D982271127600A54565 /* Camera ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36F8D972271127600A54565 /* Camera ViewController.swift */; };
+		A3D55D6E227B771500B0A25C /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D55D6D227B771500B0A25C /* PersonalViewController.swift */; };
 		A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */; };
 		A3E19EB0224EE15E008C3F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EAE224EE15E008C3F97 /* Main.storyboard */; };
 		A3E19EB2224EE160008C3F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EB1224EE160008C3F97 /* Assets.xcassets */; };
@@ -31,8 +30,7 @@
 		814D606B226141B500D61251 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		814D606D2261489A00D61251 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9D5CADA12258080300AE4CB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A36F8D952271124600A54565 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		A36F8D972271127600A54565 /* Camera ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera ViewController.swift"; sourceTree = "<group>"; };
+		A3D55D6D227B771500B0A25C /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		A3E19EA7224EE15E008C3F97 /* MeMyself-I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeMyself-I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E19EAF224EE15E008C3F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,10 +99,9 @@
 				9D5CADA12258080300AE4CB7 /* HomeViewController.swift */,
 				A3E19EB1224EE160008C3F97 /* Assets.xcassets */,
 				A3E19EB6224EE160008C3F97 /* Info.plist */,
-				A36F8D972271127600A54565 /* Camera ViewController.swift */,
 				814D606B226141B500D61251 /* SignUpViewController.swift */,
-				A36F8D952271124600A54565 /* FeedViewController.swift */,
 				814D606D2261489A00D61251 /* SignInViewController.swift */,
+				A3D55D6D227B771500B0A25C /* PersonalViewController.swift */,
 			);
 			path = "MeMyself-I";
 			sourceTree = "<group>";
@@ -246,10 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36F8D982271127600A54565 /* Camera ViewController.swift in Sources */,
 				814D606E2261489A00D61251 /* SignInViewController.swift in Sources */,
+				A3D55D6E227B771500B0A25C /* PersonalViewController.swift in Sources */,
 				814D606C226141B500D61251 /* SignUpViewController.swift in Sources */,
-				A36F8D962271124600A54565 /* FeedViewController.swift in Sources */,
 				9D5CADA22258080300AE4CB7 /* HomeViewController.swift in Sources */,
 				A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */,
 			);
