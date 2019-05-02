@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-RD-Lv4">
-                                <rect key="frame" x="244" y="492" width="70" height="36"/>
+                                <rect key="frame" x="211" y="492" width="103" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="dve-PN-IUN"/>
                                     <constraint firstAttribute="width" constant="103" id="eMr-YO-T22"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9x-NI-cdT">
-                                <rect key="frame" x="66" y="492" width="103" height="36"/>
+                                <rect key="frame" x="66" y="492" width="70" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Y1D-em-Vnh"/>
                                     <constraint firstAttribute="width" constant="103" id="tVZ-db-jTf"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
         </scene>
-        <!--SignIn View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="lQv-F3-M3d">
             <objects>
-                <viewController storyboardIdentifier="logInViewController" title="SignIn View Controller" id="ObO-dH-Vsz" customClass="SignInViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObO-dH-Vsz" customClass="SignInViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aa2-bd-dYA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,6 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signin:" destination="ObO-dH-Vsz" eventType="touchUpInside" id="9SB-Ee-FNS"/>
-                                    <segue destination="lcQ-P8-hiz" kind="presentation" id="nr5-5y-osO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,6 +214,7 @@
                         <outlet property="PasswordText" destination="6qO-Wk-lnb" id="Qhx-VH-xkB"/>
                         <outlet property="Username" destination="OJd-WD-gmm" id="HKK-Py-JQz"/>
                         <outlet property="UsernameText" destination="n7Q-YQ-kN3" id="aIE-Pq-tvu"/>
+                        <segue destination="lcQ-P8-hiz" kind="presentation" id="eEB-0C-uNe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaI-u7-Mp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +236,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgD-3z-fEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3934" y="27"/>
+            <point key="canvasLocation" x="3530" y="27"/>
         </scene>
         <!--SignUP View Controller-->
         <scene sceneID="6Vm-5Y-yUh">
@@ -471,7 +471,7 @@
         <!--Feed View Controller-->
         <scene sceneID="Xps-Mj-R5y">
             <objects>
-                <viewController title="Feed View Controller" id="LlW-UO-ysn" customClass="FeedTableViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feed View Controller" id="LlW-UO-ysn" customClass="FeedViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLt-C2-YWZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -494,7 +494,7 @@
         <!--Navigation Controller-->
         <scene sceneID="20K-Co-Dis">
             <objects>
-                <navigationController storyboardIdentifier="SignInViewController" automaticallyAdjustsScrollViewInsets="NO" id="de1-Ju-Jsw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="de1-Ju-Jsw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="rsz_1" id="KgV-HH-kLY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mkJ-c5-QVC">
@@ -508,7 +508,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ3-Qc-pJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5166" y="27"/>
+            <point key="canvasLocation" x="4921" y="27"/>
         </scene>
     </scenes>
     <resources>

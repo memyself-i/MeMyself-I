@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let SignInViewController = main.instantiateViewController(withIdentifier: "SignInViewController")
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "feedNavigationController")
             
-            window?.rootViewController = SignInViewController
+            window?.rootViewController = feedNavigationController
         }
         
         

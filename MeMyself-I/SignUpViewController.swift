@@ -36,9 +36,7 @@ class SignUpViewController: UIViewController {
         let user = PFUser()
         
         user.username = username.text
-        
         user.password = password.text
-        
         user.email = email.text
         
         if  user.password == confirmPassword.text{

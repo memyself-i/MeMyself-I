@@ -12,8 +12,8 @@
 		8148F11F225ADF4F00E77D03 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8148F11E225ADF4F00E77D03 /* Feed.storyboard */; };
 		814D606C226141B500D61251 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606B226141B500D61251 /* SignUpViewController.swift */; };
 		814D606E2261489A00D61251 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606D2261489A00D61251 /* SignInViewController.swift */; };
-		A3B97BEF227B9DCD00AE89E6 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B97BEE227B9DCD00AE89E6 /* FeedTableViewController.swift */; };
 		A3B97BF3227BA5B800AE89E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B97BF2227BA5B800AE89E6 /* HomeViewController.swift */; };
+		A3B97BF7227BAB0900AE89E6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */; };
 		A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */; };
 		A3E19EB0224EE15E008C3F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EAE224EE15E008C3F97 /* Main.storyboard */; };
 		A3E19EB2224EE160008C3F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EB1224EE160008C3F97 /* Assets.xcassets */; };
@@ -29,8 +29,8 @@
 		8148F11E225ADF4F00E77D03 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		814D606B226141B500D61251 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		814D606D2261489A00D61251 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		A3B97BEE227B9DCD00AE89E6 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A3B97BF2227BA5B800AE89E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A3E19EA7224EE15E008C3F97 /* MeMyself-I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeMyself-I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E19EAF224EE15E008C3F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 				A3B97BF2227BA5B800AE89E6 /* HomeViewController.swift */,
 				814D606B226141B500D61251 /* SignUpViewController.swift */,
 				814D606D2261489A00D61251 /* SignInViewController.swift */,
-				A3B97BEE227B9DCD00AE89E6 /* FeedTableViewController.swift */,
+				A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */,
 			);
 			path = "MeMyself-I";
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			files = (
 				A3B97BF3227BA5B800AE89E6 /* HomeViewController.swift in Sources */,
 				814D606E2261489A00D61251 /* SignInViewController.swift in Sources */,
-				A3B97BEF227B9DCD00AE89E6 /* FeedTableViewController.swift in Sources */,
+				A3B97BF7227BAB0900AE89E6 /* FeedViewController.swift in Sources */,
 				814D606C226141B500D61251 /* SignUpViewController.swift in Sources */,
 				A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */,
 			);
