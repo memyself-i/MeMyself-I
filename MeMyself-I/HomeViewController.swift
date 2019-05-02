@@ -1,19 +1,16 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  MeMyself-I
 //
-//  Created by 何恺君 on 4/5/19.
+//  Created by Hao on 5/2/19.
 //  Copyright © 2019 Hao. All rights reserved.
 //
 
 import UIKit
 import Parse
 
+class HomeViewController: UIViewController {
 
-class LoginViewController: UIViewController {
-
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let SignInNavigationController = main.instantiateViewController(withIdentifier: "SignInNavigationController")
+            let SignInViewController = main.instantiateViewController(withIdentifier: "SignInViewController")
             
-            window?.rootViewController = SignInNavigationController
+            window?.rootViewController = SignInViewController
         }
         
         

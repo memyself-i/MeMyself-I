@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--SignIn View Controller-->
         <scene sceneID="lQv-F3-M3d">
             <objects>
-                <viewController title="SignIn View Controller" id="ObO-dH-Vsz" customClass="SignInViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInViewController" title="SignIn View Controller" id="ObO-dH-Vsz" customClass="SignInViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aa2-bd-dYA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +224,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hOe-tv-qKd">
             <objects>
-                <tabBarController storyboardIdentifier="SignInNavigationController" id="lcQ-P8-hiz" sceneMemberID="viewController">
+                <tabBarController id="lcQ-P8-hiz" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WVA-2C-ZKn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -468,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="1148" y="26.53673163418291"/>
         </scene>
-        <!--Personal View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="Xps-Mj-R5y">
             <objects>
-                <viewController id="LlW-UO-ysn" customClass="PersonalViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feed View Controller" id="LlW-UO-ysn" customClass="FeedTableViewController" customModule="MeMyself_I" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLt-C2-YWZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,7 +479,11 @@
                         <viewLayoutGuide key="safeArea" id="QNB-2K-QpJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="lWe-ac-0Ml">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="z0d-ej-gxQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="z0d-ej-gxQ">
+                            <connections>
+                                <action selector="OnLogout:" destination="LlW-UO-ysn" id="RP2-lv-pVu"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="yRk-rF-VNn"/>
                     </navigationItem>
                 </viewController>
@@ -490,7 +494,7 @@
         <!--Navigation Controller-->
         <scene sceneID="20K-Co-Dis">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="de1-Ju-Jsw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignInViewController" automaticallyAdjustsScrollViewInsets="NO" id="de1-Ju-Jsw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="rsz_1" id="KgV-HH-kLY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mkJ-c5-QVC">
