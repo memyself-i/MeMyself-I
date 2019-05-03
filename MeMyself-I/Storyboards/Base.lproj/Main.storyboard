@@ -36,7 +36,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-RD-Lv4">
+<<<<<<< HEAD
                                 <rect key="frame" x="211" y="492" width="103" height="36"/>
+=======
+                                <rect key="frame" x="244" y="492" width="70" height="36"/>
+>>>>>>> master
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="dve-PN-IUN"/>
                                     <constraint firstAttribute="width" constant="103" id="eMr-YO-T22"/>
@@ -48,7 +52,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9x-NI-cdT">
+<<<<<<< HEAD
                                 <rect key="frame" x="66" y="492" width="70" height="36"/>
+=======
+                                <rect key="frame" x="66" y="492" width="103" height="36"/>
+>>>>>>> master
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Y1D-em-Vnh"/>
                                     <constraint firstAttribute="width" constant="103" id="tVZ-db-jTf"/>
@@ -214,7 +222,7 @@
                         <outlet property="PasswordText" destination="6qO-Wk-lnb" id="Qhx-VH-xkB"/>
                         <outlet property="Username" destination="OJd-WD-gmm" id="HKK-Py-JQz"/>
                         <outlet property="UsernameText" destination="n7Q-YQ-kN3" id="aIE-Pq-tvu"/>
-                        <segue destination="lcQ-P8-hiz" kind="presentation" id="eEB-0C-uNe"/>
+                        <segue destination="lcQ-P8-hiz" kind="presentation" identifier="MainSegue" id="eEB-0C-uNe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaI-u7-Mp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
