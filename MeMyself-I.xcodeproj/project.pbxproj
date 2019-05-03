@@ -14,6 +14,7 @@
 		814D606E2261489A00D61251 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D606D2261489A00D61251 /* SignInViewController.swift */; };
 		A3B97BF3227BA5B800AE89E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B97BF2227BA5B800AE89E6 /* HomeViewController.swift */; };
 		A3B97BF7227BAB0900AE89E6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */; };
+		A3D7AC07227BC5530040F555 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7AC06227BC5530040F555 /* PostViewController.swift */; };
 		A3E19EAB224EE15E008C3F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */; };
 		A3E19EB0224EE15E008C3F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EAE224EE15E008C3F97 /* Main.storyboard */; };
 		A3E19EB2224EE160008C3F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E19EB1224EE160008C3F97 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		814D606D2261489A00D61251 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A3B97BF2227BA5B800AE89E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A3D7AC06227BC5530040F555 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A3E19EA7224EE15E008C3F97 /* MeMyself-I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeMyself-I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E19EAA224EE15E008C3F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3E19EAF224EE15E008C3F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				814D606B226141B500D61251 /* SignUpViewController.swift */,
 				814D606D2261489A00D61251 /* SignInViewController.swift */,
 				A3B97BF6227BAB0900AE89E6 /* FeedViewController.swift */,
+				A3D7AC06227BC5530040F555 /* PostViewController.swift */,
 			);
 			path = "MeMyself-I";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D7AC07227BC5530040F555 /* PostViewController.swift in Sources */,
 				A3B97BF3227BA5B800AE89E6 /* HomeViewController.swift in Sources */,
 				814D606E2261489A00D61251 /* SignInViewController.swift in Sources */,
 				A3B97BF7227BAB0900AE89E6 /* FeedViewController.swift in Sources */,
