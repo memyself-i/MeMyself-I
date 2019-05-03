@@ -18,43 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“You make millions of decisions that mean nothing, and then one day your order takes out and it changes your life.”" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-6G-LqC">
-                                <rect key="frame" x="22" y="352" width="334" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="334" id="1Wy-pg-zeA"/>
-                                    <constraint firstAttribute="height" constant="83" id="FjW-Jg-GwL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MeMyself-I" highlightedImage="WechatIMG65" translatesAutoresizingMaskIntoConstraints="NO" id="wF4-Ud-glU">
-                                <rect key="frame" x="19" y="35" width="340" height="220"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="337" id="9ci-dM-Sdr"/>
-                                    <constraint firstAttribute="height" constant="293" id="Sh4-yu-z3H"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-RD-Lv4">
-                                <rect key="frame" x="244" y="492" width="70" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="dve-PN-IUN"/>
-                                    <constraint firstAttribute="width" constant="103" id="eMr-YO-T22"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sign In"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-RD-Lv4">
+                                <rect key="frame" x="238" y="488" width="80" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="udb-gb-dLD" kind="presentation" identifier="SignInSegue" id="890-Zg-Mir"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9x-NI-cdT">
-                                <rect key="frame" x="66" y="492" width="103" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Y1D-em-Vnh"/>
-                                    <constraint firstAttribute="width" constant="103" id="tVZ-db-jTf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sign Up"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle (2)" translatesAutoresizingMaskIntoConstraints="NO" id="8hX-Uj-WrJ">
+                                <rect key="frame" x="0.0" y="40" width="375" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turtly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbJ-ky-3v3">
+                                <rect key="frame" x="121" y="270" width="132" height="55"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="47"/>
+                                <color key="textColor" red="0.31057139737333617" green="0.42385786802030456" blue="0.11767562632579838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;You're Safe Here&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKQ-e0-L1b">
+                                <rect key="frame" x="113" y="333" width="149" height="24"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9x-NI-cdT">
+                                <rect key="frame" x="51" y="487" width="86" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="EqO-Sz-GLL" kind="presentation" id="qKY-8j-9iG"/>
                                 </connections>
@@ -63,19 +57,26 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="hUD-RD-Lv4" secondAttribute="trailing" constant="61" id="0IV-4h-Z1K"/>
-                            <constraint firstItem="L9x-NI-cdT" firstAttribute="top" secondItem="kOd-6G-LqC" secondAttribute="bottom" constant="57" id="1ca-ai-MXO"/>
-                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="wF4-Ud-glU" secondAttribute="trailing" constant="19" id="2s2-zh-fFk"/>
+                            <constraint firstItem="fKQ-e0-L1b" firstAttribute="top" secondItem="MbJ-ky-3v3" secondAttribute="bottom" constant="8" id="2tV-YT-LAn"/>
+                            <constraint firstItem="MbJ-ky-3v3" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="121" id="4nh-PP-EHf"/>
+                            <constraint firstItem="fKQ-e0-L1b" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="113" id="608-Qh-FWx"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="fKQ-e0-L1b" secondAttribute="trailing" constant="113" id="85f-D9-Pxr"/>
+                            <constraint firstItem="L9x-NI-cdT" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="60" id="8HX-ZK-gwW"/>
                             <constraint firstItem="WOt-dI-MsY" firstAttribute="bottom" secondItem="L9x-NI-cdT" secondAttribute="bottom" constant="139" id="Cfn-kx-zqm"/>
-                            <constraint firstItem="wF4-Ud-glU" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="19" id="Oew-CW-M7X"/>
+                            <constraint firstItem="8hX-Uj-WrJ" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" id="Dm8-GR-CuS"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="MbJ-ky-3v3" secondAttribute="trailing" constant="122" id="EKN-9m-vfO"/>
+                            <constraint firstItem="8hX-Uj-WrJ" firstAttribute="top" secondItem="WOt-dI-MsY" secondAttribute="top" constant="20" id="Git-7z-4PQ"/>
                             <constraint firstItem="L9x-NI-cdT" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="66" id="PYd-iI-D0l"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="bottom" secondItem="hUD-RD-Lv4" secondAttribute="bottom" constant="140" id="Taf-cX-tk2"/>
+                            <constraint firstItem="MbJ-ky-3v3" firstAttribute="top" secondItem="WOt-dI-MsY" secondAttribute="top" constant="250" id="UDJ-Vh-gBO"/>
+                            <constraint firstItem="fKQ-e0-L1b" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="113" id="VNT-F4-xW7"/>
                             <constraint firstItem="WOt-dI-MsY" firstAttribute="bottom" secondItem="hUD-RD-Lv4" secondAttribute="bottom" constant="139" id="WCY-1J-ZM7"/>
                             <constraint firstItem="hUD-RD-Lv4" firstAttribute="leading" secondItem="L9x-NI-cdT" secondAttribute="trailing" constant="75" id="a1S-ki-rfO"/>
-                            <constraint firstItem="kOd-6G-LqC" firstAttribute="top" secondItem="wF4-Ud-glU" secondAttribute="bottom" constant="24" id="aPe-l2-1rt"/>
-                            <constraint firstItem="kOd-6G-LqC" firstAttribute="leading" secondItem="WOt-dI-MsY" secondAttribute="leading" constant="22" id="bwK-dz-JOK"/>
-                            <constraint firstItem="wF4-Ud-glU" firstAttribute="top" secondItem="WOt-dI-MsY" secondAttribute="top" constant="15" id="hDe-iI-72I"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="fKQ-e0-L1b" secondAttribute="trailing" constant="113" id="eM0-U5-ut2"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="bottom" secondItem="L9x-NI-cdT" secondAttribute="bottom" constant="140" id="kDr-w1-q32"/>
+                            <constraint firstAttribute="trailing" secondItem="8hX-Uj-WrJ" secondAttribute="trailing" id="uIR-UK-3Jv"/>
                             <constraint firstItem="hUD-RD-Lv4" firstAttribute="leading" secondItem="L9x-NI-cdT" secondAttribute="trailing" constant="75" id="wlG-jB-eVY"/>
-                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="kOd-6G-LqC" secondAttribute="trailing" constant="19" id="zAP-ds-fu5"/>
-                            <constraint firstItem="kOd-6G-LqC" firstAttribute="top" secondItem="wF4-Ud-glU" secondAttribute="bottom" constant="24" id="zx3-cC-rT7"/>
+                            <constraint firstItem="WOt-dI-MsY" firstAttribute="trailing" secondItem="hUD-RD-Lv4" secondAttribute="trailing" constant="60" id="xFA-jb-N9R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WOt-dI-MsY"/>
                     </view>
@@ -603,10 +604,10 @@
     </scenes>
     <resources>
         <image name="+" width="54" height="38"/>
-        <image name="MeMyself-I" width="1006" height="550"/>
         <image name="WechatIMG65" width="640" height="339"/>
         <image name="WechatIMG66" width="558" height="259"/>
         <image name="WechatIMG68" width="993" height="560"/>
         <image name="rsz_1" width="18" height="18"/>
+        <image name="turtle (2)" width="256" height="256"/>
     </resources>
 </document>
