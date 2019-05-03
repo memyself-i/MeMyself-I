@@ -29,7 +29,7 @@ class SignInViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: Username, password: Password)
         { (user, error) in
             if user != nil{
-                self.performSegue(withIdentifier: "SignInSegue", sender: nil)
+                self.performSegue(withIdentifier: "MainSegue", sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")
             }
