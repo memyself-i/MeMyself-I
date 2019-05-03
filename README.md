@@ -31,6 +31,7 @@ Turtly is an app where users can write out their thoughts and emotions anonymous
 
 - [x] Users see the home screen and have options to sign in or sign up
 <img src="https://i.imgur.com/FQzYAnO.gif" width=250>
+
 - [x] Users view the dashboard after log in
 
 - [x] Users can stay logged in and log out
