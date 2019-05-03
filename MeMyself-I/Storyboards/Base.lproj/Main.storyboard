@@ -150,31 +150,34 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99u-NK-z8Z">
-                                <rect key="frame" x="122" y="535" width="61" height="3"/>
+                                <rect key="frame" x="56" y="535" width="79" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="ZGh-1D-9mj"/>
                                     <constraint firstAttribute="height" constant="36" id="xvh-j9-43z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancel:" destination="ObO-dH-Vsz" eventType="touchUpInside" id="fSv-aD-Jd4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKJ-a3-Amd">
-                                <rect key="frame" x="23" y="523" width="60" height="26"/>
+                                <rect key="frame" x="224" y="523" width="67" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="CaD-ev-zh1"/>
                                     <constraint firstAttribute="width" constant="60" id="NR8-kh-i4O"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sign In"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="signin:" destination="ObO-dH-Vsz" eventType="touchUpInside" id="9SB-Ee-FNS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N5O-2x-MHi" firstAttribute="bottom" secondItem="Ic5-p6-C5R" secondAttribute="bottom" id="2iv-hp-3bz"/>
                             <constraint firstItem="6qO-Wk-lnb" firstAttribute="top" secondItem="xef-5G-XNo" secondAttribute="bottom" constant="8" id="4Qd-tB-wQ4"/>
@@ -337,18 +340,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-9g-SVy">
-                                <rect key="frame" x="158" y="607" width="59" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="GXP-e0-PYz"/>
-                                    <constraint firstAttribute="height" constant="35" id="hhK-69-1hx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="OnCancel:" destination="oIC-Re-LhF" eventType="touchUpInside" id="ZTq-fa-4Tr"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-6k-0dz">
                                 <rect key="frame" x="16" y="438" width="253" height="30"/>
                                 <constraints>
@@ -359,16 +350,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixz-Ep-cTE">
-                                <rect key="frame" x="16" y="610" width="75" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixz-Ep-cTE">
+                                <rect key="frame" x="228" y="614" width="88" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="mif-DN-O74"/>
                                     <constraint firstAttribute="height" constant="28" id="pz0-fg-QvJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Register"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="oIC-Re-LhF" eventType="touchUpInside" id="FSO-dB-7wO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-9g-SVy">
+                                <rect key="frame" x="55" y="610" width="63" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="GXP-e0-PYz"/>
+                                    <constraint firstAttribute="height" constant="35" id="hhK-69-1hx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.3105713974" green="0.42385786800000003" blue="0.1176756263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnCancel:" destination="oIC-Re-LhF" eventType="touchUpInside" id="ZTq-fa-4Tr"/>
                                 </connections>
                             </button>
                         </subviews>
