@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
 
  
     @IBOutlet weak var Username: UILabel!
@@ -43,8 +43,21 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.UsernameText.delegate = self
+        self.PasswordText.delegate = self
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        UsernameText.resignFirstResponder()
+        PasswordText.resignFirstResponder()
+        return(true)
     }
     
 

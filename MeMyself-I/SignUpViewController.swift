@@ -22,8 +22,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.username.delegate = self
+        self.email.delegate = self
+        self.password.delegate = self
+        self.confirmPassword.delegate = self
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        username.resignFirstResponder()
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        confirmPassword.resignFirstResponder()
+        return(true)
     }
     
     @IBAction func OnCancel(_ sender: Any) {
