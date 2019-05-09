@@ -10,9 +10,17 @@ import UIKit
 import Parse
 
 class FeedViewController: UIViewController {
-
+    
+    var posts = [PFObject] ()
+    
+  
+ 
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
